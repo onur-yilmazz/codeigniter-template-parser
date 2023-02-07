@@ -9,9 +9,7 @@ The Template Parser Class can perform simple text substitution for pseudo-variab
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{name}</title>
+
 </head>
 
 <body>	
