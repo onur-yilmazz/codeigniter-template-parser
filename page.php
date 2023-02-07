@@ -10,16 +10,15 @@
 	<h1>{name}</h1>
 	<p>{content}</p>
  
-	<div class="col-sm-12">
-	    {content_gallery}
-		    <a href="images/{image}" data-fancybox="gallery"><img src="images/{image}" alt="{name}" title="{name}"></a>
-      {/content_gallery}
-	</div>
+	<!--Div-->	
+    {content_gallery}
+	<a href="images/{image}" data-fancybox="gallery"><img src="images/{image}" alt="{name}" title="{name}"></a>
+    {/content_gallery}
 
-	<div class="col-sm-12 keywords">
-      {keywords}
-				<a title="{meta_keywords}" href="<?=base_url();?>/tag/{link}">{meta_keywords}</a>
-      {/keywords}
-	</div>
+    <!--Div-->
+    {keywords}
+	<a title="{meta_keywords}" href="<?=base_url();?>/tag/{link}">{meta_keywords}</a>
+    {/keywords}
+
 </body>
 </html>
