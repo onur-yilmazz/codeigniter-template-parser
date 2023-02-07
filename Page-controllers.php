@@ -26,7 +26,7 @@ class Page extends MY_Controller {
                     'keywords'         => $keywords->result_array(),
                     'icerik_gallery'   => $content_gallery->result_array(),
                 );
-                $this->parser->parse('page-template', $data);
+                $this->parser->parse('page', $data);
             }else{
                 $this->load->view("404.html");
             }
