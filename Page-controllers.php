@@ -14,7 +14,7 @@ class Page extends MY_Controller {
         if(isset($content)){
                 $keywords = $this->page_model->get_keywords($content->id);
                 $content_gallery = $this->page_model->page_gallery($content->id);
-                if($content->image <> "") {$page_image = '<img class="page-image" src="images/'.$page->image.'">';}else{$page_image="";}
+                if($content->image <> "") {$page_image = '<img class="page-image" src="images/'.$content->image.'">';}else{$page_image="";}
                 $data = array(
                     'id'               => $content->id,
                     'name'             => $content->name,
