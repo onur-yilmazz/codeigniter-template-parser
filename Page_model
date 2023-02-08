@@ -16,7 +16,7 @@
 
 	    /** Parse Query **/
 	    public function get_keywords($id){
-	        return $this->db->query("SELECT * FROM keywords where cat_id=$id ORDER BY id ASC");
+	        return $this->db->query("SELECT * FROM keywords where page_id=$id ORDER BY id ASC");
 	    }
 
 	    public function content_gallery($id){
