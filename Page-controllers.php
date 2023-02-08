@@ -24,7 +24,7 @@ class Page extends MY_Controller {
                     'meta_description' => $content->meta_description,
                     'seo_title'        => $content->seo_title,
                     'keywords'         => $keywords->result_array(),
-                    'icerik_gallery'   => $content_gallery->result_array(),
+                    'content_gallery'  => $content_gallery->result_array(),
                 );
                 $this->parser->parse('page', $data);
             }else{
