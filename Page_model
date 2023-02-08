@@ -15,7 +15,7 @@
 
 
 	    /** Parse Query **/
-	    public function get_keywords($id,$lang_id){
+	    public function get_keywords($id){
 	        return $this->db->query("SELECT * FROM keywords where cat_id=$id ORDER BY id ASC");
 	    }
 
